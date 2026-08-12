@@ -1,0 +1,177 @@
+{
+  "schema": "shipping-learning-v1",
+  "run_id": "shipping-20260812-evening-2006",
+  "run_type": "evening",
+  "executed_at": "2026-08-12T20:06:12+08:00",
+  "previous_success_at": "2026-08-12T08:02:36+08:00",
+  "data_cutoff": "2026-08-12T19:55:00+08:00",
+  "status": "completed",
+  "alert_level": "red_navigation_cost_risk",
+  "data_quality_grade": "B",
+  "summary": "外資三檔同步賣超；陽明與萬海第二季獲利改善，但荷姆茲船流與VLSFO成本風險仍高。",
+  "signals": {
+    "hormuz": "Kpler 8艘、LSEG 11艘；貨櫃船與暗航未知",
+    "jebel_ali_wait_hours": null,
+    "singapore_wait_hours": 31.92,
+    "north_asia_wait_hours": 30,
+    "north_europe_wait_hours": 36.96,
+    "scfi": 3276.14,
+    "scfi_change_pct": 2.19,
+    "ccfi": 1839.61,
+    "ccfi_change_pct": -0.9,
+    "wci": 4297,
+    "wci_change_pct": 1,
+    "blank_sailings": "第33至37週取消52航次，約7%",
+    "port_skips": "unknown",
+    "rerouting": "部分蘇伊士回歸規畫面臨重新評估",
+    "fuel": "新加坡VLSFO 847.5美元/噸，日升13.5美元",
+    "war_risk_insurance": "elevated；無同口徑公開報價"
+  },
+  "stocks": {
+    "2603": {
+      "market_date": "2026-08-12",
+      "price_type": "close",
+      "open": 217,
+      "high": 217,
+      "low": 213,
+      "close_or_last": 214.5,
+      "change_pct": -1.61,
+      "volume": 9362,
+      "foreign_net": -3144,
+      "investment_trust_net": 1991,
+      "dealer_net": -175,
+      "institution_date": "2026-08-12"
+    },
+    "2609": {
+      "market_date": "2026-08-12",
+      "price_type": "close",
+      "open": 52,
+      "high": 52.1,
+      "low": 51.3,
+      "close_or_last": 51.7,
+      "change_pct": -0.58,
+      "volume": 10409,
+      "foreign_net": -1402,
+      "investment_trust_net": 32,
+      "dealer_net": -138,
+      "institution_date": "2026-08-12"
+    },
+    "2615": {
+      "market_date": "2026-08-12",
+      "price_type": "close",
+      "open": 87.7,
+      "high": 87.7,
+      "low": 86,
+      "close_or_last": 87.1,
+      "change_pct": 0,
+      "volume": 7053,
+      "foreign_net": -464,
+      "investment_trust_net": -2,
+      "dealer_net": -70,
+      "institution_date": "2026-08-12"
+    }
+  },
+  "companies": {
+    "evergreen": {
+      "short_term": "中性偏多但轉震盪",
+      "medium_term": "等待第二季財報確認",
+      "score": 68,
+      "key_driver": "投信承接、第二季財報與美國線運價"
+    },
+    "yang_ming": {
+      "short_term": "財報改善但尚待股價確認",
+      "medium_term": "中性偏多，供給增速為風險",
+      "score": 66,
+      "key_driver": "Q2 EPS 1.64元、外資賣超與供需差"
+    },
+    "wan_hai": {
+      "short_term": "高波動中性偏多",
+      "medium_term": "獲利彈性高，但新船與中東成本並存",
+      "score": 70,
+      "key_driver": "Q2 EPS 4.11元、新船與亞洲運價"
+    }
+  },
+  "hypotheses": [
+    {
+      "text": "獲利改善但市場已部分反映，航道與船燃成本使三雄分化",
+      "state": "主假說_更新",
+      "evidence": ["陽明與萬海Q2獲利改善", "外資三檔賣超", "船流低迷且VLSFO上升"],
+      "falsification": "三雄同步放量上漲、法人共同買超且運價上升快於成本"
+    },
+    {
+      "text": "強勁財報將觸發族群全面重評",
+      "state": "替代假說_待驗證",
+      "evidence": ["陽明量價改善", "萬海Q2 EPS 4.11元", "SCFI與WCI上升"],
+      "falsification": "開高走低、外資續賣或長榮財報未能支持評價"
+    },
+    {
+      "text": "新增運力在2至6週壓過局部運價改善",
+      "state": "替代假說_中期風險",
+      "evidence": ["運力增速高於需求", "萬海擴充船隊", "運價尚未完全同向"],
+      "falsification": "三項運價連升且航道受阻持續吸收運力"
+    }
+  ],
+  "forecast": {
+    "horizon": "當日/1至3日；2至6週；1至4季；1至5年",
+    "direction": "短線偏多但高波動分化；中期觀察財報、運價、船流與成本",
+    "confidence": "中等，非統計機率",
+    "reason": "財報支持基本面，但今日價量與外資未確認全面重評"
+  },
+  "lessons": [
+    {
+      "rule": "盤後財報不得回頭解釋當日收盤",
+      "change": "列為下一交易日驗證事件",
+      "reason": "財報於收盤後公布"
+    },
+    {
+      "rule": "事件方向須由收盤與法人共同確認",
+      "change": "降低單一新聞方向權重",
+      "reason": "安全風險升高但三雄未齊漲"
+    }
+  ],
+  "forecast_review": {
+    "prior_run_id": "shipping-20260812-morning-0802",
+    "result": "部分命中",
+    "error_type": "命中分化但偏多方向過度",
+    "lesson": "以收盤突破、法人延續及財報後次日反應共同驗證"
+  },
+  "weekly_evaluation": null,
+  "sources": [
+    {
+      "title": "臺灣證券交易所個股日成交資訊",
+      "url": "https://www.twse.com.tw/zh/trading/historical/stock-day.html",
+      "published_at": "2026-08-12",
+      "accessed_at": "2026-08-12T19:38:00+08:00"
+    },
+    {
+      "title": "臺灣證券交易所三大法人買賣超日報",
+      "url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "published_at": "2026-08-12",
+      "accessed_at": "2026-08-12T19:39:00+08:00"
+    },
+    {
+      "title": "陽明第二季財報",
+      "url": "https://money.udn.com/money/story/5612/8936172",
+      "published_at": "2026-08-12",
+      "accessed_at": "2026-08-12T19:41:00+08:00"
+    },
+    {
+      "title": "萬海第二季財報",
+      "url": "https://money.udn.com/money/story/5612/8936132",
+      "published_at": "2026-08-12",
+      "accessed_at": "2026-08-12T19:43:00+08:00"
+    },
+    {
+      "title": "Reuters Hormuz shipping traffic falls to one-week low",
+      "url": "https://www.reuters.com/world/middle-east/hormuz-shipping-traffic-falls-one-week-low-amid-hostilities-2026-08-12/",
+      "published_at": "2026-08-12",
+      "accessed_at": "2026-08-12T19:45:00+08:00"
+    },
+    {
+      "title": "Ship & Bunker Singapore VLSFO",
+      "url": "https://shipandbunker.com/prices/apac/sea/sg-sin-singapore",
+      "published_at": "2026-08-11",
+      "accessed_at": "2026-08-12T19:47:00+08:00"
+    }
+  ]
+}

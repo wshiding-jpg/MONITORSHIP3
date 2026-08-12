@@ -1,177 +1,41 @@
-{
-  "schema": "shipping-learning-v1",
-  "run_id": "shipping-20260812-evening-2006",
-  "run_type": "evening",
-  "executed_at": "2026-08-12T20:06:12+08:00",
-  "previous_success_at": "2026-08-12T08:02:36+08:00",
-  "data_cutoff": "2026-08-12T19:55:00+08:00",
-  "status": "completed",
-  "alert_level": "red_navigation_cost_risk",
-  "data_quality_grade": "B",
-  "summary": "外資三檔同步賣超；陽明與萬海第二季獲利改善，但荷姆茲船流與VLSFO成本風險仍高。",
-  "signals": {
-    "hormuz": "Kpler 8艘、LSEG 11艘；貨櫃船與暗航未知",
-    "jebel_ali_wait_hours": null,
-    "singapore_wait_hours": 31.92,
-    "north_asia_wait_hours": 30,
-    "north_europe_wait_hours": 36.96,
-    "scfi": 3276.14,
-    "scfi_change_pct": 2.19,
-    "ccfi": 1839.61,
-    "ccfi_change_pct": -0.9,
-    "wci": 4297,
-    "wci_change_pct": 1,
-    "blank_sailings": "第33至37週取消52航次，約7%",
-    "port_skips": "unknown",
-    "rerouting": "部分蘇伊士回歸規畫面臨重新評估",
-    "fuel": "新加坡VLSFO 847.5美元/噸，日升13.5美元",
-    "war_risk_insurance": "elevated；無同口徑公開報價"
-  },
-  "stocks": {
-    "2603": {
-      "market_date": "2026-08-12",
-      "price_type": "close",
-      "open": 217,
-      "high": 217,
-      "low": 213,
-      "close_or_last": 214.5,
-      "change_pct": -1.61,
-      "volume": 9362,
-      "foreign_net": -3144,
-      "investment_trust_net": 1991,
-      "dealer_net": -175,
-      "institution_date": "2026-08-12"
-    },
-    "2609": {
-      "market_date": "2026-08-12",
-      "price_type": "close",
-      "open": 52,
-      "high": 52.1,
-      "low": 51.3,
-      "close_or_last": 51.7,
-      "change_pct": -0.58,
-      "volume": 10409,
-      "foreign_net": -1402,
-      "investment_trust_net": 32,
-      "dealer_net": -138,
-      "institution_date": "2026-08-12"
-    },
-    "2615": {
-      "market_date": "2026-08-12",
-      "price_type": "close",
-      "open": 87.7,
-      "high": 87.7,
-      "low": 86,
-      "close_or_last": 87.1,
-      "change_pct": 0,
-      "volume": 7053,
-      "foreign_net": -464,
-      "investment_trust_net": -2,
-      "dealer_net": -70,
-      "institution_date": "2026-08-12"
-    }
-  },
-  "companies": {
-    "evergreen": {
-      "short_term": "中性偏多但轉震盪",
-      "medium_term": "等待第二季財報確認",
-      "score": 68,
-      "key_driver": "投信承接、第二季財報與美國線運價"
-    },
-    "yang_ming": {
-      "short_term": "財報改善但尚待股價確認",
-      "medium_term": "中性偏多，供給增速為風險",
-      "score": 66,
-      "key_driver": "Q2 EPS 1.64元、外資賣超與供需差"
-    },
-    "wan_hai": {
-      "short_term": "高波動中性偏多",
-      "medium_term": "獲利彈性高，但新船與中東成本並存",
-      "score": 70,
-      "key_driver": "Q2 EPS 4.11元、新船與亞洲運價"
-    }
-  },
-  "hypotheses": [
-    {
-      "text": "獲利改善但市場已部分反映，航道與船燃成本使三雄分化",
-      "state": "主假說_更新",
-      "evidence": ["陽明與萬海Q2獲利改善", "外資三檔賣超", "船流低迷且VLSFO上升"],
-      "falsification": "三雄同步放量上漲、法人共同買超且運價上升快於成本"
-    },
-    {
-      "text": "強勁財報將觸發族群全面重評",
-      "state": "替代假說_待驗證",
-      "evidence": ["陽明量價改善", "萬海Q2 EPS 4.11元", "SCFI與WCI上升"],
-      "falsification": "開高走低、外資續賣或長榮財報未能支持評價"
-    },
-    {
-      "text": "新增運力在2至6週壓過局部運價改善",
-      "state": "替代假說_中期風險",
-      "evidence": ["運力增速高於需求", "萬海擴充船隊", "運價尚未完全同向"],
-      "falsification": "三項運價連升且航道受阻持續吸收運力"
-    }
-  ],
-  "forecast": {
-    "horizon": "當日/1至3日；2至6週；1至4季；1至5年",
-    "direction": "短線偏多但高波動分化；中期觀察財報、運價、船流與成本",
-    "confidence": "中等，非統計機率",
-    "reason": "財報支持基本面，但今日價量與外資未確認全面重評"
-  },
-  "lessons": [
-    {
-      "rule": "盤後財報不得回頭解釋當日收盤",
-      "change": "列為下一交易日驗證事件",
-      "reason": "財報於收盤後公布"
-    },
-    {
-      "rule": "事件方向須由收盤與法人共同確認",
-      "change": "降低單一新聞方向權重",
-      "reason": "安全風險升高但三雄未齊漲"
-    }
-  ],
-  "forecast_review": {
-    "prior_run_id": "shipping-20260812-morning-0802",
-    "result": "部分命中",
-    "error_type": "命中分化但偏多方向過度",
-    "lesson": "以收盤突破、法人延續及財報後次日反應共同驗證"
-  },
-  "weekly_evaluation": null,
-  "sources": [
-    {
-      "title": "臺灣證券交易所個股日成交資訊",
-      "url": "https://www.twse.com.tw/zh/trading/historical/stock-day.html",
-      "published_at": "2026-08-12",
-      "accessed_at": "2026-08-12T19:38:00+08:00"
-    },
-    {
-      "title": "臺灣證券交易所三大法人買賣超日報",
-      "url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
-      "published_at": "2026-08-12",
-      "accessed_at": "2026-08-12T19:39:00+08:00"
-    },
-    {
-      "title": "陽明第二季財報",
-      "url": "https://money.udn.com/money/story/5612/8936172",
-      "published_at": "2026-08-12",
-      "accessed_at": "2026-08-12T19:41:00+08:00"
-    },
-    {
-      "title": "萬海第二季財報",
-      "url": "https://money.udn.com/money/story/5612/8936132",
-      "published_at": "2026-08-12",
-      "accessed_at": "2026-08-12T19:43:00+08:00"
-    },
-    {
-      "title": "Reuters Hormuz shipping traffic falls to one-week low",
-      "url": "https://www.reuters.com/world/middle-east/hormuz-shipping-traffic-falls-one-week-low-amid-hostilities-2026-08-12/",
-      "published_at": "2026-08-12",
-      "accessed_at": "2026-08-12T19:45:00+08:00"
-    },
-    {
-      "title": "Ship & Bunker Singapore VLSFO",
-      "url": "https://shipandbunker.com/prices/apac/sea/sg-sin-singapore",
-      "published_at": "2026-08-11",
-      "accessed_at": "2026-08-12T19:47:00+08:00"
-    }
-  ]
-}
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07121f">
+  <title>航運三雄｜市場監測儀表板</title>
+  <style>
+    :root{--bg:#07121f;--panel:#0d1c2d;--panel2:#11253a;--line:#203c55;--text:#edf6ff;--muted:#91a9bd;--cyan:#31d2f2;--green:#34d399;--red:#fb7185;--amber:#fbbf24;--blue:#60a5fa}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% -10%,#123c55 0,transparent 32%),linear-gradient(180deg,#07121f,#081622 70%);color:var(--text);font-family:Inter,"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;min-height:100vh}
+    .wrap{width:min(1180px,calc(100% - 28px));margin:auto;padding:30px 0 54px}.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:20px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.2em}.title{font-size:clamp(28px,5vw,50px);line-height:1.05;margin:8px 0}.subtitle{color:var(--muted);margin:0;max-width:720px;line-height:1.7}.stamp{text-align:right;color:var(--muted);font-size:13px;white-space:nowrap}.live{display:inline-flex;align-items:center;gap:7px;color:#b9f7df;margin-bottom:8px}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}
+    .alert{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;padding:18px 20px;border:1px solid #7d3042;background:linear-gradient(100deg,rgba(127,29,50,.5),rgba(22,33,49,.85));border-radius:16px;margin-bottom:18px}.alertIcon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:#9f2440;font-size:22px}.alert h2{font-size:17px;margin:0 0 5px}.alert p{color:#f1b8c3;margin:0;line-height:1.55}.grade{font-size:28px;font-weight:900;color:var(--amber);text-align:center}.grade small{display:block;color:var(--muted);font-size:11px;font-weight:600}
+    .grid{display:grid;gap:16px}.stocks{grid-template-columns:repeat(3,1fr);margin-bottom:16px}.card,.section{background:linear-gradient(145deg,rgba(17,37,58,.96),rgba(10,26,42,.96));border:1px solid var(--line);border-radius:16px;box-shadow:0 14px 40px rgba(0,0,0,.16)}.stock{padding:20px;position:relative;overflow:hidden}.stock:after{content:"";position:absolute;width:110px;height:110px;border-radius:50%;right:-45px;top:-50px;background:color-mix(in srgb,var(--accent),transparent 82%)}.stockHead{display:flex;justify-content:space-between;align-items:start}.ticker{color:var(--muted);font-size:12px;letter-spacing:.1em}.company{font-size:22px;font-weight:800;margin-top:2px}.score{color:var(--accent);font-weight:900;font-size:26px}.score small{font-size:11px;color:var(--muted)}.price{font-size:36px;font-weight:900;margin:22px 0 2px}.change{font-weight:800}.negative{color:var(--green)}.positive{color:var(--red)}.flat{color:var(--muted)}.range{height:5px;border-radius:4px;background:#203448;margin:17px 0;overflow:hidden}.range i{display:block;height:100%;background:var(--accent);border-radius:4px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.metric{padding:9px 5px;border-top:1px solid var(--line)}.metric b{display:block;font-size:14px;margin-top:4px}.metric span{font-size:10px;color:var(--muted)}.driver{margin:14px 0 0;color:#b9cddd;font-size:13px;line-height:1.55}
+    .row{grid-template-columns:1.15fr .85fr;margin-bottom:16px}.section{padding:20px}.section h2{font-size:17px;margin:0 0 16px;display:flex;align-items:center;gap:9px}.section h2:before{content:"";width:4px;height:18px;border-radius:2px;background:var(--cyan)}.rates{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.rate{background:#091827;border:1px solid var(--line);border-radius:12px;padding:14px}.rate span{color:var(--muted);font-size:11px}.rate b{font-size:24px;display:block;margin:7px 0}.rate em{font-style:normal;font-size:12px}.ports{display:grid;gap:12px}.portTop{display:flex;justify-content:space-between;font-size:13px}.bar{height:7px;background:#1b3043;border-radius:9px;margin-top:7px;overflow:hidden}.bar i{height:100%;display:block;border-radius:9px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+    .signals{grid-template-columns:repeat(4,1fr);margin-bottom:16px}.signal{padding:17px}.signal span{display:block;color:var(--muted);font-size:11px;margin-bottom:7px}.signal b{font-size:14px;line-height:1.5}.hypotheses{display:grid;gap:10px}.hypothesis{display:grid;grid-template-columns:130px 1fr;gap:14px;padding:15px;background:#091827;border:1px solid var(--line);border-radius:12px}.tag{height:max-content;padding:7px 9px;border-radius:8px;text-align:center;color:#081622;background:var(--cyan);font-size:11px;font-weight:900}.tag.alt{background:var(--amber)}.hypothesis b{display:block;margin-bottom:7px}.hypothesis p{margin:4px 0;color:var(--muted);font-size:12px;line-height:1.6}.bottom{grid-template-columns:1fr 1fr}.list{margin:0;padding-left:20px;color:#c8d9e6}.list li{padding:6px 0;line-height:1.6}.sourceList{display:grid;gap:8px}.sourceList a{color:#b8d9ef;text-decoration:none;font-size:12px;padding:8px 10px;background:#091827;border-radius:8px}.sourceList a:hover{color:var(--cyan)}footer{text-align:center;color:#607b91;font-size:11px;margin-top:25px}.error{padding:30px;border:1px solid #7d3042;background:#331724;border-radius:15px;color:#ffd6de}
+    @media(max-width:850px){.stocks,.signals{grid-template-columns:1fr 1fr}.row,.bottom{grid-template-columns:1fr}.top{display:block}.stamp{text-align:left;margin-top:15px}.rates{grid-template-columns:1fr 1fr}}
+    @media(max-width:570px){.wrap{width:min(100% - 20px,1180px);padding-top:20px}.stocks,.signals,.rates{grid-template-columns:1fr}.alert{grid-template-columns:auto 1fr}.grade{grid-column:1/-1;text-align:left}.hypothesis{grid-template-columns:1fr}.tag{width:max-content}.metrics{gap:4px}.price{font-size:32px}}
+  </style>
+</head>
+<body><main class="wrap" id="app"><div class="error">正在讀取最新航運資料……</div></main>
+<script>
+const names={"2603":"長榮","2609":"陽明","2615":"萬海"};
+const accents={"2603":"#31d2f2","2609":"#fbbf24","2615":"#a78bfa"};
+const companyKeys={"2603":"evergreen","2609":"yang_ming","2615":"wan_hai"};
+const fmt=n=>n==null?"—":Number(n).toLocaleString("zh-TW");
+const cls=n=>n>0?"positive":n<0?"negative":"flat";
+const signed=n=>n==null?"—":`${n>0?"+":""}${fmt(n)}`;
+const pct=n=>n==null?"—":`${n>0?"+":""}${n}%`;
+const esc=s=>String(s??"—").replace(/[&<>\"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+function stockCard(code,s,d){const c=d.companies[companyKeys[code]]||{};const pos=s.high===s.low?50:Math.max(4,Math.min(100,(s.close_or_last-s.low)/(s.high-s.low)*100));return `<article class="card stock" style="--accent:${accents[code]}"><div class="stockHead"><div><div class="ticker">${code} · TWSE</div><div class="company">${names[code]}</div></div><div class="score">${fmt(c.score)}<small>/100</small></div></div><div class="price">${fmt(s.close_or_last)}</div><div class="change ${cls(s.change_pct)}">${pct(s.change_pct)}</div><div class="range"><i style="width:${pos}%"></i></div><div class="metrics"><div class="metric"><span>成交量</span><b>${fmt(s.volume)} 張</b></div><div class="metric"><span>外資</span><b class="${cls(s.foreign_net)}">${signed(s.foreign_net)}</b></div><div class="metric"><span>投信</span><b class="${cls(s.investment_trust_net)}">${signed(s.investment_trust_net)}</b></div></div><p class="driver"><b>${esc(c.short_term)}</b><br>${esc(c.key_driver)}</p></article>`}
+function render(d){const q=d.data_quality_grade||"—";const ports=[["新加坡",d.signals.singapore_wait_hours],["北亞",d.signals.north_asia_wait_hours],["北歐",d.signals.north_europe_wait_hours]];document.getElementById("app").innerHTML=`
+<header class="top"><div><div class="eyebrow">CONTAINER SHIPPING INTELLIGENCE</div><h1 class="title">航運三雄市場監測</h1><p class="subtitle">將股價、法人、運價、港口等待、航道與燃油成本放在同一張決策畫面；清楚區分證據、推論與反證條件。</p></div><div class="stamp"><div class="live"><i class="dot"></i>資料已完成更新</div><br>資料截至 ${esc(d.data_cutoff?.replace("T"," ").slice(0,16))}<br>${d.run_type==="morning"?"盤前早報":"盤後晚報"}</div></header>
+<section class="alert"><div class="alertIcon">⚠</div><div><h2>目前核心判讀</h2><p>${esc(d.summary)}</p></div><div class="grade">${esc(q)}<small>資料品質</small></div></section>
+<section class="grid stocks">${Object.entries(d.stocks).map(([c,s])=>stockCard(c,s,d)).join("")}</section>
+<section class="grid row"><div class="section"><h2>三大運價指數</h2><div class="rates">${[["SCFI",d.signals.scfi,d.signals.scfi_change_pct],["CCFI",d.signals.ccfi,d.signals.ccfi_change_pct],["WCI",d.signals.wci,d.signals.wci_change_pct]].map(x=>`<div class="rate"><span>${x[0]}</span><b>${fmt(x[1])}</b><em class="${cls(x[2])}">${pct(x[2])}</em></div>`).join("")}</div></div><div class="section"><h2>主要港口等待時間</h2><div class="ports">${ports.map(([n,v])=>`<div><div class="portTop"><span>${n}</span><b>${v==null?"資料待補":v+" 小時"}</b></div><div class="bar"><i style="width:${v==null?0:Math.min(100,v/48*100)}%"></i></div></div>`).join("")}</div></div></section>
+<section class="grid signals">${[["荷姆茲船流",d.signals.hormuz],["空班",d.signals.blank_sailings],["繞航判讀",d.signals.rerouting],["燃油／戰險",d.signals.fuel+"；"+d.signals.war_risk_insurance]].map(x=>`<div class="card signal"><span>${x[0]}</span><b>${esc(x[1])}</b></div>`).join("")}</section>
+<section class="section" style="margin-bottom:16px"><h2>情境假說與反證條件</h2><div class="hypotheses">${d.hypotheses.map((h,i)=>`<div class="hypothesis"><div class="tag ${i?"alt":""}">${esc(h.state)}</div><div><b>${esc(h.text)}</b><p>支持證據｜${h.evidence.map(esc).join("、")}</p><p>反證條件｜${esc(h.falsification)}</p></div></div>`).join("")}</div></section>
+<section class="grid bottom"><div class="section"><h2>預測與校準</h2><ul class="list"><li>${esc(d.forecast.direction)}</li><li>信心：${esc(d.forecast.confidence)}</li><li>前次檢驗：${esc(d.forecast_review.result)}；${esc(d.forecast_review.error_type)}</li><li>${esc(d.forecast_review.lesson)}</li></ul></div><div class="section"><h2>資料來源</h2><div class="sourceList">${d.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)} · ${esc(s.published_at)}</a>`).join("")}</div></div></section>
+<footer>本儀表板為研究與情境判讀工具，不構成投資建議。資料缺口以「—／待補」顯示，不以推測值補齊。</footer>`}
+fetch("./data/latest.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(render).catch(e=>{document.getElementById("app").innerHTML=`<div class="error"><b>資料暫時無法載入</b><br>請稍後重新整理。錯誤代碼：${esc(e.message)}</div>`})
+</script></body></html>
